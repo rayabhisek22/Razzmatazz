@@ -1,0 +1,357 @@
+
+
+
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:400,700&display=swap');
+body{
+    margin:0;
+    padding:0;
+    font-family: 'Josefin Sans', sans-serif;
+    width: 100%;
+    height: 100%;
+
+}
+
+body {
+    background: url("../images/sa/background.jpg");
+    background-repeat: no-repeat; 
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.contain {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  height: 100%;
+}
+
+
+
+
+.ml6 {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: 900;
+    font-size: 4.7em;
+    font-family: 'Kaushan Script', cursive;
+    text-shadow: 4px 3px 10px tomato;
+    letter-spacing: 2px;
+  }
+
+  .ml6 img {
+      height: 150px;
+      width: 150px;
+
+  }
+  
+  @keyframes scale {
+    from {
+      transform: scale(1);
+    }
+    to {
+      transform: scale(1.1);
+    }
+  }
+
+  .ml6 .text-wrapper {
+    position: relative;
+    display: inline-block;
+    padding-top: 0.2em;
+    padding-right: 0.05em;
+    padding-bottom: 0.1em;
+    overflow: hidden;
+    margin: auto auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .ml6 .letter {
+    display: inline-block;
+    line-height: 1em;
+  }
+
+
+  .geek img{
+      height: 400px;
+      width: 220px;
+      margin-left: 7%;
+      position: relative;
+      transform-origin: left top;
+      animation: scale 4s infinite;
+  }
+
+  .geek1 img{
+    height: 400px;
+    width: 220px;
+    margin-left: 10%;
+    position: relative;
+    transform-origin: left top;
+    animation: scale 4s infinite;
+}
+
+#geek1 {
+  visibility: hidden;
+}
+
+body {
+  background-color: #fff;
+  font-family: 'Roboto', sans-serif;
+  color: #0c093c;
+
+}
+body .wrapper {
+  max-width: 550px;
+  margin-left: 42%;
+}
+body .wrapper h1 {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  text-transform: uppercase;
+  font-size: 1.5em;
+}
+body .wrapper .speechbubble {
+  background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("../images/sa/card3.jpg");
+  background-position: center;
+  background-color: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+  font-size: .8em;
+  line-height: 1.75;
+  padding: 15px 25px;
+  margin-bottom: 75px;
+  cursor: default;
+  font-family: 'Kelly Slab', cursive;
+  letter-spacing: 2px;
+}
+body .wrapper .speechbubble:nth-child(2n) {
+  border-left: 5px solid;
+}
+body .wrapper .speechbubble:nth-child(2n):after {
+  content: '';
+  margin-top: -30px;
+  padding-top: 0px;
+  position: relative;
+  bottom: -45px;
+  left: 20px;
+  border-width: 30px 0 0 30px;
+  border-style: solid;
+  border-color: #fd584c transparent;
+  display: block;
+  width: 0;
+}
+body .wrapper .speechbubble:nth-child(2n+1) {
+  border-right: 5px solid;
+}
+body .wrapper .speechbubble:nth-child(2n+1):after {
+  content: '';
+  margin-top: -30px;
+  padding-top: 0px;
+  position: relative;
+  bottom: -45px;
+  left: 450px;
+  border-width: 30px 30px 0 0;
+  border-style: solid;
+  border-color: #fd584c transparent;
+  display: block;
+  width: 0;
+}
+body .wrapper .speechbubble:nth-child(4n+1) {
+  border-color: #fd584c;
+}
+body .wrapper .speechbubble:nth-child(4n+2) {
+  border-color: #fd584c;
+}
+body .wrapper .speechbubble:nth-child(4n+3) {
+  border-color: #fd584c;
+}
+body .wrapper .speechbubble:nth-child(4n+4) {
+  border-color: #fd584c;
+}
+body .wrapper .speechbubble p:before {
+  /* content: "“"; */
+  font-family: Georgia;
+  font-size: 40px;
+  line-height: 0;
+  display: inline-block;
+  display: -webkit-inline-box;
+}
+body .wrapper .speechbubble .username {
+  display: inline;
+  font-style: italic;
+  float: right;
+}
+body .wrapper .speechbubble .username:before {
+  content: '- ';
+}
+
+
+.sticky {
+  position: fixed;
+  left: 0;
+  width: 100%;
+  display: block;
+}
+
+.oval-thought-border{
+  height: 23px;
+  width: 198px;
+  position: relative;
+  padding: 70px 30px;
+  margin-left: 142%;
+  margin-top: -432px;
+  background: rgba(0,0,0,0.5);
+  border: 5px solid #c81e2b;
+  text-align: center;
+  border-radius: 50%;
+}
+
+.oval-thought-border:before{
+  content: "";
+  display: block;
+  border: 5px solid #c81e2b;
+  position: absolute;
+  z-index: 10;
+  border-radius: 50%;
+  width: 40px;
+  height: 35px;
+  bottom: -25px;
+  left: 40px;
+  background: rgba(0,0,0,0.5);  
+}
+
+.oval-thought-border:after{
+  content: "";
+  border: 5px solid #c81e2b;
+  border-radius: 25px;
+  width: 15px;
+  height: 15px;
+  z-index: 10;
+  position: absolute;
+  bottom: -44px;
+  right: 223px;
+  display: block;
+  background: rgba(0,0,0,0.5);
+}
+
+blockquote p {
+  margin-top: -10px;
+  font-size: 18px;
+  color: #fff;
+  font-family: 'Kelly Slab', cursive;
+}
+
+
+
+.oval-thought-border1{
+  height: 23px;
+  width: 198px;
+  position: relative;
+  padding: 70px 30px;
+  margin-left: 100%;
+  margin-top: -432px;
+  background: rgba(0,0,0,0.5);
+  border: 5px solid #c81e2b;
+  text-align: center;
+  border-radius: 50%;
+}
+
+.oval-thought-border1:before{
+  content: "";
+  display: block;
+  border: 5px solid #c81e2b;
+  position: absolute;
+  z-index: 10;
+  border-radius: 50%;
+  width: 40px;
+  height: 35px;
+  bottom: -25px;
+  left: 40px;
+  background: rgba(0,0,0,0.5);  
+}
+
+.oval-thought-border1:after{
+  content: "";
+  border: 5px solid #c81e2b;
+  border-radius: 25px;
+  width: 15px;
+  height: 15px;
+  z-index: 10;
+  position: absolute;
+  bottom: -44px;
+  right: 223px;
+  display: block;
+  background: rgba(0,0,0,0.5);
+}
+
+
+
+
+@media only screen and (max-width: 600px) {
+
+
+  .sticky {
+    display: none;
+  }
+
+
+
+  .ml6 {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 56px;
+  }
+
+  body .wrapper {
+    max-width: 550px;
+    margin-left: 4%;
+    margin-right: 5%;
+    overflow-x: hidden;
+  }
+
+  body .wrapper .speechbubble {
+    background: rgba(53, 1, 8, 0.5);
+  }
+
+  body .wrapper .speechbubble:nth-child(2n+1):after {
+    left: 140px;
+  }
+
+  #geek1 {
+    visibility: visible;
+  }
+
+  .geek1 img {
+    height: 300px;
+    width: 100px;
+    margin-left: -100px;
+  }
+
+  .oval-thought-border1 {
+    margin-top: -370px;
+    height: 20px;
+    width: 100px;
+    margin-left: 0px;
+  }
+
+  blockquote p {
+    margin-top: -55px;
+    font-size: 16px;
+  }
+
+  .oval-thought-border1:after {
+    right: 122px;
+  }
+}
+
+
+@media screen and (max-width: 100vw) and (min-width: 500px) {
+  .sticky {
+    position: fixed;
+    left: 8;
+    width: 15%;
+    height: 100%;
+  }
+}
